@@ -28,12 +28,12 @@ describe "find_outlier" do
     _(find_outlier([2, 4, 0, 100, 4, 11, 2602, 36])).must_equal(11)
     _(find_outlier([160, 3, 1719, 19, 11, 13, -21])).must_equal(160)
     _(find_outlier([0, 1, 2])).must_equal(1)
-     _(find_outlier([1, 2, 3])).must_equal(2)
+    _(find_outlier([1, 2, 3])).must_equal(2)
   end
 end
 
 def find_outlier_elegent(integers)
-  integers.partition(&:odd?)!.find(&:one?).first
+  integers.partition(&:odd?).find(&:one?).first
 end
 
 describe "find_outlier_elegent" do
@@ -41,6 +41,6 @@ describe "find_outlier_elegent" do
     _(find_outlier_elegent([2, 4, 0, 100, 4, 11, 2602, 36])).must_equal(11)
     _(find_outlier_elegent([160, 3, 1719, 19, 11, 13, -21])).must_equal(160)
     _(find_outlier_elegent([0, 1, 2])).must_equal(1)
-     _(find_outlier_elegent([1, 2, 3])).must_equal(2)
+    _(find_outlier_elegent([1, 2, 3])).must_equal(2)
   end
 end
