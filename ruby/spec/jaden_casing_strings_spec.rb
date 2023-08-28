@@ -1,5 +1,5 @@
 require_relative './spec_helper'
-require_relative '../jaden_casing_strings'
+require_relative '../lib/jaden_casing_strings'
 
 describe 'jaden_casing' do
   it 'should capitalize the first letter of words' do

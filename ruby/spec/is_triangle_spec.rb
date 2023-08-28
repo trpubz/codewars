@@ -1,5 +1,5 @@
 require_relative './spec_helper'
-require_relative '../is_triangle'
+require_relative '../lib/is_triangle'
 
 describe 'isTriangle' do
   it 'Public tests' do
@@ -8,3 +8,4 @@ describe 'isTriangle' do
     expect(is_triangle(5, 2, 2)).to be false
   end
 end
+
